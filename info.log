@@ -1,0 +1,9 @@
+2025/09/12 14:18:53 main.go:18: Loggin to a file in GO!
+2025/09/12 14:18:53 server.go:25: Start server
+2025/09/12 14:19:06 nextdate.go:67: Обработчик nextDayHandler
+2025/09/12 14:20:41 gettask.go:10: Обработчик getTaskHandler
+2025/09/12 14:20:41 gettask.go:13: Получен id: 6
+2025/09/12 14:20:41 task.go:92: Ошибка сканирования запроса в БД
+2025/09/12 14:20:41 gettask.go:16: Ошибка при получении id: sql: no rows in result set
+2025/09/12 14:23:15 main.go:18: Loggin to a file in GO!
+2025/09/12 14:23:15 server.go:25: Start server
