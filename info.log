@@ -358,3 +358,140 @@
 2025/09/15 08:54:40 addtask.go:59: Записан заголовок и ответ после сериализации
 2025/09/15 08:55:10 main.go:18: Loggin to a file in GO!
 2025/09/15 08:55:10 server.go:25: Start server
+2025/09/15 10:17:26 main.go:18: Loggin to a file in GO!
+2025/09/15 10:17:26 server.go:31: Start server
+2025/09/15 10:17:29 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:17:29 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:17:29 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b0190 0xc0000b01e0 0xc0000b0230]
+2025/09/15 10:17:29 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:17:29 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:26:57 main.go:18: Loggin to a file in GO!
+2025/09/15 10:26:57 server.go:31: Start server
+2025/09/15 10:27:26 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:27:26 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:27:26 task.go:68: После SELECT запроса получили слайс структур: [0xc000226190 0xc0002261e0 0xc000226230]
+2025/09/15 10:27:26 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:27:26 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:31:31 main.go:18: Loggin to a file in GO!
+2025/09/15 10:31:31 server.go:31: Start server
+2025/09/15 10:35:42 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:35:42 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:35:42 task.go:68: После SELECT запроса получили слайс структур: [0xc0000e28c0 0xc0000e2910 0xc0000e2960]
+2025/09/15 10:35:42 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:35:42 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:36:06 main.go:18: Loggin to a file in GO!
+2025/09/15 10:36:06 server.go:31: Start server
+2025/09/15 10:43:33 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:43:33 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:43:33 task.go:68: После SELECT запроса получили слайс структур: [0xc000212190 0xc0002121e0 0xc000212230]
+2025/09/15 10:43:33 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:43:33 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:43:53 main.go:18: Loggin to a file in GO!
+2025/09/15 10:43:53 server.go:31: Start server
+2025/09/15 10:44:11 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:44:11 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:44:11 task.go:68: После SELECT запроса получили слайс структур: [0xc0001841e0 0xc000184230 0xc000184280]
+2025/09/15 10:44:11 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:44:11 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:47:41 main.go:18: Loggin to a file in GO!
+2025/09/15 10:47:41 server.go:31: Start server
+2025/09/15 10:47:45 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:47:45 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:47:45 task.go:68: После SELECT запроса получили слайс структур: [0xc00018e230 0xc00018e280 0xc00018e2d0]
+2025/09/15 10:47:45 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:47:45 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:47:54 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:47:54 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:47:54 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b2190 0xc0000b21e0 0xc0000b2230]
+2025/09/15 10:47:54 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:47:54 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:56:11 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:56:11 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:56:11 task.go:68: После SELECT запроса получили слайс структур: [0xc000200280 0xc0002002d0 0xc000200320]
+2025/09/15 10:56:11 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:56:11 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:56:26 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:56:26 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:56:26 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b2500 0xc0000b2550 0xc0000b25a0]
+2025/09/15 10:56:26 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:56:26 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:56:27 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:56:27 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:56:27 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b27d0 0xc0000b2820 0xc0000b2870]
+2025/09/15 10:56:27 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:56:27 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:56:28 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:56:28 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:56:28 task.go:68: После SELECT запроса получили слайс структур: [0xc00018e4b0 0xc00018e500 0xc00018e550]
+2025/09/15 10:56:28 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:56:28 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:56:33 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:56:33 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:56:33 task.go:68: После SELECT запроса получили слайс структур: [0xc00018e780 0xc00018e7d0 0xc00018e820]
+2025/09/15 10:56:33 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:56:33 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:56:33 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:56:33 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:56:33 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b2aa0 0xc0000b2af0 0xc0000b2b40]
+2025/09/15 10:56:33 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:56:33 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:56:43 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:56:43 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:56:43 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b2d70 0xc0000b2dc0 0xc0000b2e10]
+2025/09/15 10:56:43 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:56:43 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 10:56:43 tasks.go:15: Обработчик tasksHandler
+2025/09/15 10:56:43 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 10:56:43 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b3040 0xc0000b3090 0xc0000b30e0]
+2025/09/15 10:56:43 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 10:56:43 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 13:07:45 main.go:18: Loggin to a file in GO!
+2025/09/15 13:07:45 server.go:35: Start server
+2025/09/15 13:08:51 tasks.go:15: Обработчик tasksHandler
+2025/09/15 13:08:51 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 13:08:51 task.go:68: После SELECT запроса получили слайс структур: [0xc000184280 0xc0001842d0 0xc000184320]
+2025/09/15 13:08:51 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 13:08:51 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 13:08:53 tasks.go:15: Обработчик tasksHandler
+2025/09/15 13:08:53 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 13:08:53 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b0190 0xc0000b01e0 0xc0000b0230]
+2025/09/15 13:08:53 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 13:08:53 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 13:08:53 tasks.go:15: Обработчик tasksHandler
+2025/09/15 13:08:53 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 13:08:53 task.go:68: После SELECT запроса получили слайс структур: [0xc000184550 0xc0001845a0 0xc0001845f0]
+2025/09/15 13:08:53 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 13:08:53 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 13:08:54 tasks.go:15: Обработчик tasksHandler
+2025/09/15 13:08:54 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 13:08:54 task.go:68: После SELECT запроса получили слайс структур: [0xc000132a00 0xc000132a50 0xc000132aa0]
+2025/09/15 13:08:54 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 13:08:54 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 13:08:58 gettask.go:10: Обработчик getTaskHandler
+2025/09/15 13:08:58 gettask.go:13: Получен id: 4
+2025/09/15 13:08:58 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:4 Date:20250921 Title:дедлайн Comment:Яндекс Repeat:}
+2025/09/15 13:08:58 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 13:08:58 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 13:09:16 updatetask.go:14: Обработчик updateTaskHandler
+2025/09/15 13:09:16 updatetask.go:31: Получен PUT запрос в виде: {ID:4 Date:20250921 Title:дедлайн Comment:Яндекс Практикум Repeat:}
+2025/09/15 13:09:16 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:4 Date:20250921 Title:дедлайн Comment:Яндекс Repeat:}
+2025/09/15 13:09:16 task.go:101: функция UpdateTask
+2025/09/15 13:09:16 task.go:102: структура task: &{ID:4 Date:20250921 Title:дедлайн Comment:Яндекс Практикум Repeat:}
+2025/09/15 13:09:16 task.go:117: отправлен Exec запрос на изменение
+2025/09/15 13:09:16 task.go:124: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 13:09:16 task.go:128: проверка 	count == 0 прошла успешно
+2025/09/15 13:09:16 task.go:129: функция UpdateTask вернула nil
+2025/09/15 13:09:16 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.updateTaskHandler (updatetask.go:76)
+2025/09/15 13:09:16 updatetask.go:77: Записан заголовок и ответ {} после сериализации
+2025/09/15 13:09:16 tasks.go:15: Обработчик tasksHandler
+2025/09/15 13:09:16 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 13:09:16 task.go:68: После SELECT запроса получили слайс структур: [0xc0000b08c0 0xc0000b0910 0xc0000b0960]
+2025/09/15 13:09:16 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 13:09:16 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 14:20:10 main.go:18: Loggin to a file in GO!
+2025/09/15 14:20:10 server.go:29: Start server
+2025/09/15 14:20:29 tasks.go:15: Обработчик tasksHandler
+2025/09/15 14:20:29 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 14:20:29 task.go:68: После SELECT запроса получили слайс структур: [0xc000226190 0xc0002261e0 0xc000226230]
+2025/09/15 14:20:29 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 14:20:29 addtask.go:59: Записан заголовок и ответ после сериализации

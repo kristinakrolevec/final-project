@@ -17,7 +17,11 @@ func main() {
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 	log.Print("Loggin to a file in GO!")
 
-	err = db.Init("scheduler.db")
+	dbPath := os.Getenv("TODO_DBFILE")
+	if dbPath == "" {
+		dbPath = "scheduler.db"
+	}
+	err = db.Init(dbPath)
 	if err != nil {
 		log.Printf("Mistake in db. ")
 	}

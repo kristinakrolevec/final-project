@@ -4,11 +4,10 @@ import (
 	"FINAL-PROJECT/pkg/api"
 	"log"
 	"net/http"
+	"os"
 )
 
 const webDir = "./web"
-
-var MyServer *http.Server
 
 func Run() {
 
@@ -17,14 +16,19 @@ func Run() {
 
 	api.Init(mux)
 
-	MyServer := &http.Server{
-		Addr:    ":7540",
+	port := os.Getenv("TODO_PORT")
+	if port == "" {
+		port = "7540"
+	}
+
+	Server := &http.Server{
+		Addr:    ":" + port,
 		Handler: mux,
 	}
 
 	log.Printf("Start server")
 
-	err := MyServer.ListenAndServe()
+	err := Server.ListenAndServe()
 	if err != nil {
 		log.Fatal("Mistake in ListenAndServe")
 	}
