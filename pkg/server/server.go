@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-const webDir = "../web"
+const webDir = "./web"
 
 var MyServer *http.Server
 

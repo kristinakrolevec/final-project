@@ -7,3 +7,354 @@
 2025/09/12 14:20:41 gettask.go:16: Ошибка при получении id: sql: no rows in result set
 2025/09/12 14:23:15 main.go:18: Loggin to a file in GO!
 2025/09/12 14:23:15 server.go:25: Start server
+2025/09/15 08:49:36 main.go:18: Loggin to a file in GO!
+2025/09/15 08:49:36 server.go:25: Start server
+2025/09/15 08:49:38 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:49:38 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:49:38 task.go:68: После SELECT запроса получили слайс структур: []
+2025/09/15 08:49:38 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:49:38 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:50:12 addtask.go:73: Обработчик addTaskHandler
+2025/09/15 08:50:12 addtask.go:90: Получен POST запрос в виде: {ID: Date:20250917 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:50:12 nextdate.go:29: значение dstart = 2025-09-17 00:00:00 +0000 UTC/
+2025/09/15 08:50:12 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:50:12 task.go:20: Начинаем добавлять данные в базу данных/20250917, /зубной, /не бояться!, /y
+2025/09/15 08:50:12 task.go:35: ошибка res.LastInsertId - <nil>
+2025/09/15 08:50:12 task.go:37: ID равен 1
+2025/09/15 08:50:12 addtask.go:110: присвоенный ID равен 1
+2025/09/15 08:50:12 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:50:12 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:50:12 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:50:12 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:50:12 task.go:68: После SELECT запроса получили слайс структур: [0xc0002185a0]
+2025/09/15 08:50:12 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:50:12 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:50:32 addtask.go:73: Обработчик addTaskHandler
+2025/09/15 08:50:32 addtask.go:90: Получен POST запрос в виде: {ID: Date:20250903 Title:прошлое забыть Comment: Repeat:}
+2025/09/15 08:50:32 addtask.go:39: task.Date меньше настоящей и Repeat = пусто, поэтому сегодня = 20250915
+2025/09/15 08:50:32 task.go:20: Начинаем добавлять данные в базу данных/20250915, /прошлое забыть, /, /
+2025/09/15 08:50:32 task.go:35: ошибка res.LastInsertId - <nil>
+2025/09/15 08:50:32 task.go:37: ID равен 2
+2025/09/15 08:50:32 addtask.go:110: присвоенный ID равен 2
+2025/09/15 08:50:32 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:50:32 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:50:32 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:50:32 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:50:32 task.go:68: После SELECT запроса получили слайс структур: [0xc0001a6230 0xc0001a6280]
+2025/09/15 08:50:32 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:50:32 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:50:37 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:50:37 donetask.go:17: Получен POST запрос на выполнение, id: 2
+2025/09/15 08:50:37 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:2 Date:20250915 Title:прошлое забыть Comment: Repeat:}
+2025/09/15 08:50:37 donetask.go:32: Через GetTask получена задача: &{ID:2 Date:20250915 Title:прошлое забыть Comment: Repeat:}
+2025/09/15 08:50:37 task.go:166: функция DeleteTask
+2025/09/15 08:50:37 task.go:181: отправлен запрос на удаление - успешно
+2025/09/15 08:50:45 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:50:45 donetask.go:17: Получен POST запрос на выполнение, id: 2
+2025/09/15 08:50:45 task.go:92: Ошибка сканирования запроса в БД
+2025/09/15 08:50:45 donetask.go:28: Ошибка при получении id: sql: no rows in result set
+2025/09/15 08:50:52 deletetask.go:13: Обработчик deleteTaskHandler
+2025/09/15 08:50:52 deletetask.go:16: Получен DELETE запрос на удаление, id: 2
+2025/09/15 08:50:52 task.go:92: Ошибка сканирования запроса в БД
+2025/09/15 08:50:52 deletetask.go:27: Ошибка при получении id: sql: no rows in result set
+2025/09/15 08:50:57 gettask.go:10: Обработчик getTaskHandler
+2025/09/15 08:50:57 gettask.go:13: Получен id: 1
+2025/09/15 08:50:57 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20250917 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:50:57 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:50:57 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:02 updatetask.go:14: Обработчик updateTaskHandler
+2025/09/15 08:51:02 updatetask.go:31: Получен PUT запрос в виде: {ID:1 Date:20250918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:02 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20250917 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:02 nextdate.go:29: значение dstart = 2025-09-18 00:00:00 +0000 UTC/
+2025/09/15 08:51:02 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:02 task.go:101: функция UpdateTask
+2025/09/15 08:51:02 task.go:102: структура task: &{ID:1 Date:20250918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:02 task.go:117: отправлен Exec запрос на изменение
+2025/09/15 08:51:02 task.go:124: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:02 task.go:128: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:02 task.go:129: функция UpdateTask вернула nil
+2025/09/15 08:51:02 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.updateTaskHandler (updatetask.go:76)
+2025/09/15 08:51:02 updatetask.go:77: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:02 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:02 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:02 task.go:68: После SELECT запроса получили слайс структур: [0xc0000eb400]
+2025/09/15 08:51:02 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:02 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:14 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:14 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:14 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20250918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:14 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20250918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:14 nextdate.go:29: значение dstart = 2025-09-18 00:00:00 +0000 UTC/
+2025/09/15 08:51:14 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:14 task.go:134: функция UpdateDate
+2025/09/15 08:51:14 task.go:149: отправлен Exec запрос на изменение даты
+2025/09/15 08:51:14 task.go:156: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:14 task.go:160: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:14 task.go:161: функция UpdateTask вернула nil
+2025/09/15 08:51:14 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.doneTaskHandler (donetask.go:62)
+2025/09/15 08:51:14 donetask.go:63: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:14 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:14 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:14 task.go:68: После SELECT запроса получили слайс структур: [0xc0001a6aa0]
+2025/09/15 08:51:14 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:14 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:16 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:16 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:16 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20260918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:16 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20260918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:16 nextdate.go:29: значение dstart = 2026-09-18 00:00:00 +0000 UTC/
+2025/09/15 08:51:16 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:16 task.go:134: функция UpdateDate
+2025/09/15 08:51:16 task.go:149: отправлен Exec запрос на изменение даты
+2025/09/15 08:51:16 task.go:156: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:16 task.go:160: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:16 task.go:161: функция UpdateTask вернула nil
+2025/09/15 08:51:16 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.doneTaskHandler (donetask.go:62)
+2025/09/15 08:51:16 donetask.go:63: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:16 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:16 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:16 task.go:68: После SELECT запроса получили слайс структур: [0xc0000eb9a0]
+2025/09/15 08:51:16 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:16 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:18 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:18 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:18 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20270918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:18 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20270918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:18 nextdate.go:29: значение dstart = 2027-09-18 00:00:00 +0000 UTC/
+2025/09/15 08:51:18 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:18 task.go:134: функция UpdateDate
+2025/09/15 08:51:18 task.go:149: отправлен Exec запрос на изменение даты
+2025/09/15 08:51:18 task.go:156: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:18 task.go:160: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:18 task.go:161: функция UpdateTask вернула nil
+2025/09/15 08:51:18 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.doneTaskHandler (donetask.go:62)
+2025/09/15 08:51:18 donetask.go:63: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:18 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:18 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:18 task.go:68: После SELECT запроса получили слайс структур: [0xc0001a6ff0]
+2025/09/15 08:51:18 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:18 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:21 gettask.go:10: Обработчик getTaskHandler
+2025/09/15 08:51:21 gettask.go:13: Получен id: 1
+2025/09/15 08:51:21 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20280918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:21 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:21 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:25 updatetask.go:14: Обработчик updateTaskHandler
+2025/09/15 08:51:25 updatetask.go:31: Получен PUT запрос в виде: {ID:1 Date:20280915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:25 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20280918 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:25 nextdate.go:29: значение dstart = 2028-09-15 00:00:00 +0000 UTC/
+2025/09/15 08:51:25 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:25 task.go:101: функция UpdateTask
+2025/09/15 08:51:25 task.go:102: структура task: &{ID:1 Date:20280915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:25 task.go:117: отправлен Exec запрос на изменение
+2025/09/15 08:51:25 task.go:124: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:25 task.go:128: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:25 task.go:129: функция UpdateTask вернула nil
+2025/09/15 08:51:25 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.updateTaskHandler (updatetask.go:76)
+2025/09/15 08:51:25 updatetask.go:77: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:25 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:25 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:25 task.go:68: После SELECT запроса получили слайс структур: [0xc0001a7220]
+2025/09/15 08:51:25 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:25 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:27 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:27 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:27 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20280915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:27 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20280915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:27 nextdate.go:29: значение dstart = 2028-09-15 00:00:00 +0000 UTC/
+2025/09/15 08:51:27 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:27 task.go:134: функция UpdateDate
+2025/09/15 08:51:27 task.go:149: отправлен Exec запрос на изменение даты
+2025/09/15 08:51:27 task.go:156: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:27 task.go:160: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:27 task.go:161: функция UpdateTask вернула nil
+2025/09/15 08:51:27 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.doneTaskHandler (donetask.go:62)
+2025/09/15 08:51:27 donetask.go:63: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:27 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:27 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:27 task.go:68: После SELECT запроса получили слайс структур: [0xc000138000]
+2025/09/15 08:51:27 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:27 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:28 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:28 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:28 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20290915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:28 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20290915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:28 nextdate.go:29: значение dstart = 2029-09-15 00:00:00 +0000 UTC/
+2025/09/15 08:51:28 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:28 task.go:134: функция UpdateDate
+2025/09/15 08:51:28 task.go:149: отправлен Exec запрос на изменение даты
+2025/09/15 08:51:28 task.go:156: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:28 task.go:160: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:28 task.go:161: функция UpdateTask вернула nil
+2025/09/15 08:51:28 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.doneTaskHandler (donetask.go:62)
+2025/09/15 08:51:28 donetask.go:63: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:28 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:28 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:28 task.go:68: После SELECT запроса получили слайс структур: [0xc000138550]
+2025/09/15 08:51:28 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:28 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:29 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:29 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:29 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20300915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:29 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20300915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:29 nextdate.go:29: значение dstart = 2030-09-15 00:00:00 +0000 UTC/
+2025/09/15 08:51:29 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:29 task.go:134: функция UpdateDate
+2025/09/15 08:51:29 task.go:149: отправлен Exec запрос на изменение даты
+2025/09/15 08:51:29 task.go:156: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:29 task.go:160: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:29 task.go:161: функция UpdateTask вернула nil
+2025/09/15 08:51:29 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.doneTaskHandler (donetask.go:62)
+2025/09/15 08:51:29 donetask.go:63: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:29 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:29 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:29 task.go:68: После SELECT запроса получили слайс структур: [0xc000219540]
+2025/09/15 08:51:29 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:29 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:29 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:29 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:29 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20310915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:29 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20310915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:29 nextdate.go:29: значение dstart = 2031-09-15 00:00:00 +0000 UTC/
+2025/09/15 08:51:29 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:29 task.go:134: функция UpdateDate
+2025/09/15 08:51:29 task.go:149: отправлен Exec запрос на изменение даты
+2025/09/15 08:51:29 task.go:156: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:29 task.go:160: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:29 task.go:161: функция UpdateTask вернула nil
+2025/09/15 08:51:29 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.doneTaskHandler (donetask.go:62)
+2025/09/15 08:51:29 donetask.go:63: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:29 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:29 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:29 task.go:68: После SELECT запроса получили слайс структур: [0xc000138af0]
+2025/09/15 08:51:29 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:29 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:30 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:30 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:30 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20320915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:30 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20320915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:30 nextdate.go:29: значение dstart = 2032-09-15 00:00:00 +0000 UTC/
+2025/09/15 08:51:30 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:51:30 task.go:134: функция UpdateDate
+2025/09/15 08:51:30 task.go:149: отправлен Exec запрос на изменение даты
+2025/09/15 08:51:30 task.go:156: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:30 task.go:160: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:30 task.go:161: функция UpdateTask вернула nil
+2025/09/15 08:51:30 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.doneTaskHandler (donetask.go:62)
+2025/09/15 08:51:30 donetask.go:63: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:30 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:30 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:30 task.go:68: После SELECT запроса получили слайс структур: [0xc0001a7860]
+2025/09/15 08:51:30 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:30 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:33 gettask.go:10: Обработчик getTaskHandler
+2025/09/15 08:51:33 gettask.go:13: Получен id: 1
+2025/09/15 08:51:33 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20330915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:33 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:33 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:36 updatetask.go:14: Обработчик updateTaskHandler
+2025/09/15 08:51:36 updatetask.go:31: Получен PUT запрос в виде: {ID:1 Date:20330915 Title:зубной Comment:не бояться! Repeat:}
+2025/09/15 08:51:36 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20330915 Title:зубной Comment:не бояться! Repeat:y}
+2025/09/15 08:51:36 task.go:101: функция UpdateTask
+2025/09/15 08:51:36 task.go:102: структура task: &{ID:1 Date:20330915 Title:зубной Comment:не бояться! Repeat:}
+2025/09/15 08:51:36 task.go:117: отправлен Exec запрос на изменение
+2025/09/15 08:51:36 task.go:124: проверка 	count, err := res.RowsAffected() прошла успешно
+2025/09/15 08:51:36 task.go:128: проверка 	count == 0 прошла успешно
+2025/09/15 08:51:36 task.go:129: функция UpdateTask вернула nil
+2025/09/15 08:51:36 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.updateTaskHandler (updatetask.go:76)
+2025/09/15 08:51:36 updatetask.go:77: Записан заголовок и ответ {} после сериализации
+2025/09/15 08:51:36 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:36 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:36 task.go:68: После SELECT запроса получили слайс структур: [0xc000296190]
+2025/09/15 08:51:36 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:36 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:51:38 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:51:38 donetask.go:17: Получен POST запрос на выполнение, id: 1
+2025/09/15 08:51:38 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:1 Date:20330915 Title:зубной Comment:не бояться! Repeat:}
+2025/09/15 08:51:38 donetask.go:32: Через GetTask получена задача: &{ID:1 Date:20330915 Title:зубной Comment:не бояться! Repeat:}
+2025/09/15 08:51:38 task.go:166: функция DeleteTask
+2025/09/15 08:51:38 task.go:181: отправлен запрос на удаление - успешно
+2025/09/15 08:51:40 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:51:40 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:51:40 task.go:68: После SELECT запроса получили слайс структур: []
+2025/09/15 08:51:40 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:51:40 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:52:18 main.go:18: Loggin to a file in GO!
+2025/09/15 08:52:18 server.go:25: Start server
+2025/09/15 08:52:21 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:52:21 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:52:21 task.go:68: После SELECT запроса получили слайс структур: []
+2025/09/15 08:52:21 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:52:21 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:52:23 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:52:23 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:52:23 task.go:68: После SELECT запроса получили слайс структур: []
+2025/09/15 08:52:23 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:52:23 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:52:32 addtask.go:73: Обработчик addTaskHandler
+2025/09/15 08:52:32 addtask.go:90: Получен POST запрос в виде: {ID: Date:20250916 Title:sdgs Comment:dfgs Repeat:}
+2025/09/15 08:52:32 task.go:20: Начинаем добавлять данные в базу данных/20250916, /sdgs, /dfgs, /
+2025/09/15 08:52:32 task.go:35: ошибка res.LastInsertId - <nil>
+2025/09/15 08:52:32 task.go:37: ID равен 3
+2025/09/15 08:52:32 addtask.go:110: присвоенный ID равен 3
+2025/09/15 08:52:32 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:52:32 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:52:32 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:52:32 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:52:32 task.go:68: После SELECT запроса получили слайс структур: [0xc000216500]
+2025/09/15 08:52:32 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:52:32 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:53:03 addtask.go:73: Обработчик addTaskHandler
+2025/09/15 08:53:03 addtask.go:90: Получен POST запрос в виде: {ID: Date:20250921 Title:дедлайн Comment:Яндекс Repeat:}
+2025/09/15 08:53:03 task.go:20: Начинаем добавлять данные в базу данных/20250921, /дедлайн, /Яндекс, /
+2025/09/15 08:53:03 task.go:35: ошибка res.LastInsertId - <nil>
+2025/09/15 08:53:03 task.go:37: ID равен 4
+2025/09/15 08:53:03 addtask.go:110: присвоенный ID равен 4
+2025/09/15 08:53:03 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:53:03 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:53:03 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:53:03 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:53:03 task.go:68: После SELECT запроса получили слайс структур: [0xc000216870 0xc0002168c0]
+2025/09/15 08:53:03 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:53:03 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:53:40 addtask.go:73: Обработчик addTaskHandler
+2025/09/15 08:53:40 addtask.go:90: Получен POST запрос в виде: {ID: Date:20250926 Title:устроиться программистом)) Comment: Repeat:}
+2025/09/15 08:53:40 task.go:20: Начинаем добавлять данные в базу данных/20250926, /устроиться программистом)), /, /
+2025/09/15 08:53:40 task.go:35: ошибка res.LastInsertId - <nil>
+2025/09/15 08:53:40 task.go:37: ID равен 5
+2025/09/15 08:53:40 addtask.go:110: присвоенный ID равен 5
+2025/09/15 08:53:40 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:53:40 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:53:40 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:53:40 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:53:40 task.go:68: После SELECT запроса получили слайс структур: [0xc000182460 0xc0001824b0 0xc000182500]
+2025/09/15 08:53:40 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:53:40 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:53:57 addtask.go:73: Обработчик addTaskHandler
+2025/09/15 08:53:57 addtask.go:90: Получен POST запрос в виде: {ID: Date:20250930 Title:работать программистом Comment: Repeat:y}
+2025/09/15 08:53:57 nextdate.go:29: значение dstart = 2025-09-30 00:00:00 +0000 UTC/
+2025/09/15 08:53:57 nextdate.go:62: все равно продолжает работать
+2025/09/15 08:53:57 task.go:20: Начинаем добавлять данные в базу данных/20250930, /работать программистом, /, /y
+2025/09/15 08:53:58 task.go:35: ошибка res.LastInsertId - <nil>
+2025/09/15 08:53:58 task.go:37: ID равен 6
+2025/09/15 08:53:58 addtask.go:110: присвоенный ID равен 6
+2025/09/15 08:53:58 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:53:58 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:53:58 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:53:58 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:53:58 task.go:68: После SELECT запроса получили слайс структур: [0xc00029a1e0 0xc00029a230 0xc00029a280 0xc00029a2d0]
+2025/09/15 08:53:58 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:53:58 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:54:37 donetask.go:14: Обработчик endTaskHandler
+2025/09/15 08:54:37 donetask.go:17: Получен POST запрос на выполнение, id: 3
+2025/09/15 08:54:37 task.go:95: После SELECT запроса для редактирования получили структуру: {ID:3 Date:20250916 Title:sdgs Comment:dfgs Repeat:}
+2025/09/15 08:54:37 donetask.go:32: Через GetTask получена задача: &{ID:3 Date:20250916 Title:sdgs Comment:dfgs Repeat:}
+2025/09/15 08:54:37 task.go:166: функция DeleteTask
+2025/09/15 08:54:37 task.go:181: отправлен запрос на удаление - успешно
+2025/09/15 08:54:40 tasks.go:15: Обработчик tasksHandler
+2025/09/15 08:54:40 tasks.go:18: Инициализирован слайс в структуре: []
+2025/09/15 08:54:40 task.go:68: После SELECT запроса получили слайс структур: [0xc00029a550 0xc00029a5a0 0xc00029a5f0]
+2025/09/15 08:54:40 server.go:3640: http: superfluous response.WriteHeader call from FINAL-PROJECT/pkg/api.writeJson (addtask.go:58)
+2025/09/15 08:54:40 addtask.go:59: Записан заголовок и ответ после сериализации
+2025/09/15 08:55:10 main.go:18: Loggin to a file in GO!
+2025/09/15 08:55:10 server.go:25: Start server
