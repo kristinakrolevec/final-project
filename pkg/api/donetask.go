@@ -36,16 +36,18 @@ func doneTaskHandler(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			returnError(w, "не получилось удалить задачу")
 		}
-	}
-	task.Date, err = NextDate(time.Now(), task.Date, task.Repeat)
-	if err != nil {
-		returnError(w, err.Error())
-		return
-	}
-	err = db.UpdateDate(task.Date, task.ID)
-	if err != nil {
-		returnError(w, err.Error())
-		return
+
+	} else {
+		task.Date, err = NextDate(time.Now(), task.Date, task.Repeat)
+		if err != nil {
+			returnError(w, err.Error())
+			return
+		}
+		err = db.UpdateDate(task.Date, task.ID)
+		if err != nil {
+			returnError(w, err.Error())
+			return
+		}
 	}
 
 	type EmptyStruct struct{}

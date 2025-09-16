@@ -7,7 +7,7 @@ import (
 	_ "modernc.org/sqlite"
 )
 
-var db *sql.DB
+var Dbase *sql.DB
 
 const schema = `CREATE TABLE scheduler (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -19,7 +19,8 @@ repeat VARCHAR(128) NOT NULL DEFAULT ""
 CREATE INDEX scheduler_date ON scheduler (date);`
 
 func Init(dbFile string) error {
-	db, err := sql.Open("sqlite", dbFile)
+	var err error
+	Dbase, err = sql.Open("sqlite", dbFile)
 	if err != nil {
 		return err
 	}
@@ -30,11 +31,11 @@ func Init(dbFile string) error {
 		install = true
 	}
 	if install {
-		_, err = db.Exec(schema)
+		_, err = Dbase.Exec(schema)
 		if err != nil {
 			return err
 		}
 	}
-	defer db.Close()
+
 	return nil
 }

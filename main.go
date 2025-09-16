@@ -5,6 +5,8 @@ import (
 	"FINAL-PROJECT/pkg/server"
 	"log"
 	"os"
+
+	_ "modernc.org/sqlite"
 )
 
 func main() {
@@ -24,7 +26,9 @@ func main() {
 	err = db.Init(dbPath)
 	if err != nil {
 		log.Printf("Mistake in db. ")
+		return
 	}
+	defer db.Dbase.Close()
 
 	server.Run()
 
