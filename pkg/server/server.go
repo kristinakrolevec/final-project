@@ -1,10 +1,11 @@
 package server
 
 import (
-	"FINAL-PROJECT/pkg/api"
 	"log"
 	"net/http"
 	"os"
+
+	"FINAL-PROJECT/pkg/api"
 )
 
 const webDir = "./web"
@@ -25,8 +26,6 @@ func Run() {
 		Addr:    ":" + port,
 		Handler: mux,
 	}
-
-	log.Printf("Start server")
 
 	err := Server.ListenAndServe()
 	if err != nil {

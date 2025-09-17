@@ -26,7 +26,6 @@ func NextDate(now time.Time, dstart string, repeat string) (string, error) {
 		log.Println("Проверка dstart на time.Parse не пройдена")
 		return "", err
 	}
-	log.Printf("значение dstart = %v/", date)
 
 	sliceInterval := strings.Split(repeat, " ")
 
@@ -36,7 +35,6 @@ func NextDate(now time.Time, dstart string, repeat string) (string, error) {
 		if err != nil || interval > 400 {
 			return "", err
 		}
-		log.Printf("значение d = %d/", interval)
 
 		for {
 			date = date.AddDate(0, 0, interval)
@@ -57,14 +55,13 @@ func NextDate(now time.Time, dstart string, repeat string) (string, error) {
 		}
 	} else {
 		log.Println("Повторение не назначено")
-		return "", errors.New("Unsupported format")
+		return "", errors.New("unsupported format")
 	}
-	log.Println("все равно продолжает работать")
+
 	return date.Format(DateFormat), nil
 }
 
 func nextDayHandler(res http.ResponseWriter, req *http.Request) {
-	log.Println("Обработчик nextDayHandler")
 
 	nowGet := req.URL.Query().Get("now")
 
@@ -77,8 +74,6 @@ func nextDayHandler(res http.ResponseWriter, req *http.Request) {
 	dstart := req.URL.Query().Get("date")
 	repeat := req.URL.Query().Get("repeat")
 
-	log.Printf("now = %v, dstart = %s, repeat = %s", nowTime, dstart, repeat)
-
 	nextDateStr, err := NextDate(nowTime, dstart, repeat)
 	if err != nil {
 		http.Error(res, err.Error(), http.StatusInternalServerError)
@@ -86,6 +81,9 @@ func nextDayHandler(res http.ResponseWriter, req *http.Request) {
 	}
 	res.Header().Set("Content-Type", "text/plain")
 	res.WriteHeader(http.StatusOK)
-	io.WriteString(res, nextDateStr)
+	if _, err := io.WriteString(res, nextDateStr); err != nil {
+		http.Error(res, err.Error(), http.StatusInternalServerError)
+		return
+	}
 
 }

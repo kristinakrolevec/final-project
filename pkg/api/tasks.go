@@ -1,29 +1,29 @@
 package api
 
 import (
-	"FINAL-PROJECT/pkg/db"
-	"log"
 	"net/http"
+
+	"FINAL-PROJECT/pkg/db"
 )
 
 type TasksResp struct {
 	Tasks []*db.Task `json:"tasks"`
 }
 
+const limit = 50
+
 func tasksHandler(w http.ResponseWriter, r *http.Request) {
 
-	log.Println("Обработчик tasksHandler")
-
-	tasks := make([]*db.Task, 0)
-	log.Printf("Инициализирован слайс в структуре: %v", tasks)
-
 	var err error
-	tasks, err = db.Tasks(50)
+	tasks, err := db.Tasks(limit)
 	if err != nil {
-		returnError(w, err.Error())
+		returnError(w, err.Error(), 404)
 		return
 	}
-	writeJson(w, TasksResp{
+	if err = writeJson(w, TasksResp{
 		Tasks: tasks,
-	})
+	}); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 }

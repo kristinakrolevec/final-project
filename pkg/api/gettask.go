@@ -1,24 +1,21 @@
 package api
 
 import (
-	"FINAL-PROJECT/pkg/db"
-	"log"
 	"net/http"
+
+	"FINAL-PROJECT/pkg/db"
 )
 
 func getTaskHandler(w http.ResponseWriter, r *http.Request) {
-	log.Println("Обработчик getTaskHandler")
 
 	id := r.URL.Query().Get("id")
-	log.Printf("Получен id: %s", id)
 	task, err := db.GetTask(id)
 	if err != nil {
-		log.Printf("Ошибка при получении id: %v", err)
-		returnError(w, err.Error())
+		returnError(w, err.Error(), 400)
 		return
 	}
 	if err = writeJson(w, task); err != nil {
-		returnError(w, "Task can not Marshal")
+		returnError(w, "Task can not Marshal", 503)
 		return
 	}
 }

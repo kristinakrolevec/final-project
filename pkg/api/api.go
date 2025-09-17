@@ -5,7 +5,7 @@ import (
 )
 
 func Init(mux *http.ServeMux) {
-	mux.HandleFunc("/api/nextdate", nextDayHandler)
+	mux.HandleFunc("GET /api/nextdate", nextDayHandler)
 	mux.HandleFunc("POST /api/task", addTaskHandler)
 	mux.HandleFunc("GET /api/task", getTaskHandler)
 	mux.HandleFunc("PUT /api/task", updateTaskHandler)

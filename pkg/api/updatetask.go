@@ -1,64 +1,52 @@
 package api
 
 import (
-	"FINAL-PROJECT/pkg/db"
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 	"strconv"
+
+	"FINAL-PROJECT/pkg/db"
 )
 
 func updateTaskHandler(w http.ResponseWriter, r *http.Request) {
-	log.Println("Обработчик updateTaskHandler")
 
 	var task db.Task
 	var buf bytes.Buffer
 
 	_, err := buf.ReadFrom(r.Body)
 	if err != nil {
-		log.Printf("Ошибка при чтении запроса Put: %v/", err)
-		returnError(w, err.Error())
+		returnError(w, err.Error(), 400)
 		return
 	}
 	if err = json.Unmarshal(buf.Bytes(), &task); err != nil {
-
-		log.Printf("Ошибка при десериализации в запросе Put: %v/", err)
-		returnError(w, err.Error())
+		returnError(w, err.Error(), 400)
 		return
 	}
-	log.Printf("Получен PUT запрос в виде: %+v", task)
-
 	_, err = strconv.Atoi(task.ID)
 	if task.ID == "" || err != nil {
-		log.Println("при проверке ID выявлена ошибка: пустой или неформат")
-		returnError(w, fmt.Sprintf("ID is empty or %v", err))
+		returnError(w, fmt.Sprintf("ID is empty or %v", err), 400)
 		return
 	}
-
 	_, err = db.GetTask(task.ID)
 	if err != nil {
-		log.Printf("Ошибка при получении id: %v", err)
-		returnError(w, err.Error())
+		returnError(w, err.Error(), 404)
 		return
 	}
 
 	if task.Title == "" {
-		log.Println("Title в Put запросе пустой")
-		returnError(w, "Title is empty")
+		returnError(w, "Title is empty", 400)
 		return
 	}
 
 	if err = checkDate(&task); err != nil {
-		log.Println("Date format error")
-		returnError(w, "Date format is error")
+		returnError(w, "Date format is error", 400)
 		return
 	}
 	err = db.UpdateTask(&task)
 	if err != nil {
-		log.Println("Error update task")
-		returnError(w, "Error update task")
+		returnError(w, "Error update task", 503)
 		return
 	}
 
@@ -66,14 +54,13 @@ func updateTaskHandler(w http.ResponseWriter, r *http.Request) {
 	var emptyJson EmptyStruct
 	answerEmptyJson, err := json.Marshal(emptyJson)
 	if err != nil {
-		log.Println("Ошибка сериализации пустой структуры")
-		returnError(w, err.Error())
+		returnError(w, err.Error(), 404)
 		return
 	}
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-
-	w.Write(answerEmptyJson)
 	w.WriteHeader(http.StatusOK)
-	log.Println("Записан заголовок и ответ {} после сериализации")
-
+	if _, err = w.Write(answerEmptyJson); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 }
